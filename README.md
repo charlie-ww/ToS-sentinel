@@ -81,13 +81,13 @@ gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregi
 cd ToS-Sentinel_cloud
 
 # 部署 Backend（替換為你的 API Key）
-gcloud run deploy tos-sentinel-backend `
-  --source ./backend `
-  --region asia-east1 `
-  --memory 2Gi `
-  --timeout 3600 `
-  --set-env-vars GEMINI_API_KEY=your_gemini_api_key `
-  --allow-unauthenticated `
+gcloud run deploy tos-sentinel-backend 
+  --source ./backend 
+  --region asia-east1 
+  --memory 2Gi 
+  --timeout 3600 
+  --set-env-vars GEMINI_API_KEY=your_gemini_api_key 
+  --allow-unauthenticated 
   --port 8000
 ```
 
@@ -96,13 +96,13 @@ gcloud run deploy tos-sentinel-backend `
 #### 步驟 3：部署 Frontend
 ```powershell
 # 部署 Frontend
-gcloud run deploy tos-sentinel-frontend `
-  --source ./frontend `
-  --region asia-east1 `
-  --memory 1Gi `
-  --timeout 3600 `
-  --set-env-vars BACKEND_URL=$BACKEND_URL `
-  --allow-unauthenticated `
+gcloud run deploy tos-sentinel-frontend 
+  --source ./frontend 
+  --region asia-east1 
+  --memory 1Gi 
+  --timeout 3600 
+  --set-env-vars BACKEND_URL=$BACKEND_URL 
+  --allow-unauthenticated 
   --port 8080
 ```
 **等待 3-5 分鐘，完成後會顯示 Frontend URL**
