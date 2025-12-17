@@ -1,7 +1,6 @@
 # 🛡️ ToS Sentinel - AI 服務條款掃雷 Agent (雲端部署版本)
 
 > **Cloud Computing and Data Analytics Final Project**  
-> Developed by 314511043 張恬嘉
 
 ## 📖 專案簡介
 
