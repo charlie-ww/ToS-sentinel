@@ -1,0 +1,16 @@
+# 防止上傳不必要的文件到 GCP
+__pycache__
+*.pyc
+.git
+.gitignore
+.env
+.venv
+venv/
+node_modules/
+*.log
+.pytest_cache
+.DS_Store
+docker-compose.yml
+Dockerfile
+.dockerignore
+README.md
